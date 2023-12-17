@@ -99,7 +99,8 @@ export const ExpenseTracker = () => {
         {profilePhoto && (
           <div className="profile">
             {" "}
-            <img className="profile-photo" src={profilePhoto} />
+            <img className="profile-photo" src={profilePhoto} alt="" />
+
             <button className="sign-out-button" onClick={signUserOut}>
               Sign Out
             </button>
@@ -116,7 +117,7 @@ export const ExpenseTracker = () => {
               <li>
                 <h4> {description} </h4>
                 <p>
-                  ${transactionAmount} •{" "}
+                  ${transactionAmount} •{" "}  
                   <label
                     style={{
                       color: transactionType === "expense" ? "red" : "green",
